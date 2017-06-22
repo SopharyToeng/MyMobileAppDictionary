@@ -1,0 +1,3 @@
+rootProject.name = 'smart9'
+
+include ':app'
