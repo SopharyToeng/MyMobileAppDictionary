@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
-import { AppRegistry,StyleSheet,Text,View,FlatList,TouchableOpacity, ScrollView } from 'react-native';
+import { AppRegistry,StyleSheet,Text,View,FlatList,TouchableOpacity, ScrollView, Button } from 'react-native';
 import { SearchBar } from 'react-native-elements';
+import { StackNavigator } from 'react-navigation';
 
-export default class smart9 extends Component {
+class HomeScreen extends React.Component  {
+  static navigationOptions = {
+    title: 'Sophary Dictionary',
+  };
   render() {
+    const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
       <SearchBar
@@ -14,7 +19,7 @@ export default class smart9 extends Component {
         <FlatList
           data={[
             {key: 'a', definition: "Hello! It's me"},
-            {key: 'a,a'},
+            {key: 'a,a', definition: "OK!"},
             {key: 'a,b,c'},
             {key: 'a.b.c'},
             {key: 'a.m'},
@@ -31,11 +36,15 @@ export default class smart9 extends Component {
             {key: 'boy'},
           ]}
           renderItem={({item}) =>
-            <TouchableOpacity style={styles.item}>
-              <ScrollView>
-                <Text>{item.key}</Text>
-              </ScrollView>
-            </TouchableOpacity>
+            <ScrollView>
+              <TouchableOpacity
+                onPress={() => navigate('Definition', { item: item })}
+              >
+                <View style={styles.item}>
+                  <Text>{item.key}</Text>
+                </View>
+              </TouchableOpacity>
+            </ScrollView>
           }
         />
       </View>
@@ -43,32 +52,49 @@ export default class smart9 extends Component {
   }
 }
 
+class DefinitionScreen extends React.Component {
+
+  static navigationOptions = ({ navigation }) => ({
+    title: `Definition of ${navigation.state.params.item.key}`,
+  });
+
+  render() {
+    const { params } = this.props.navigation.state;
+    return (
+      <View style={styles.definition}>
+        <Text>{params.item.definition}</Text>
+      </View>
+    );
+  }
+}
+
+const smart9 = StackNavigator({
+  Home: { screen: HomeScreen },
+  Definition: { screen: DefinitionScreen }
+});
+
 const styles = StyleSheet.create({
   container: {
    flex: 1,
-   paddingTop: 22
   },
   sectionHeader: {
     paddingTop: 2,
     paddingLeft: 10,
     paddingRight: 10,
     paddingBottom: 2,
-    // fontSize: 14,
     fontWeight: 'bold',
     backgroundColor: 'rgba(247,247,247,1.0)',
   },
   item: {
     padding: 10,
-    // fontSize: 18,
-    height: 44,
     borderColor: '#ddd',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.3,
-    elevation: 2,
-    position: 'relative'
-
+    borderBottomWidth: 1
   },
+  definition: {
+    padding: 10,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
 });
 
 AppRegistry.registerComponent('smart9', () => smart9);
