@@ -5,7 +5,7 @@ import { StackNavigator } from 'react-navigation';
 
 class HomeScreen extends React.Component  {
   static navigationOptions = {
-    title: 'Sophary Dictionary',
+    title: 'My Dictionary',
   };
   render() {
     const { navigate } = this.props.navigation;
@@ -76,14 +76,6 @@ const smart9 = StackNavigator({
 const styles = StyleSheet.create({
   container: {
    flex: 1,
-  },
-  sectionHeader: {
-    paddingTop: 2,
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingBottom: 2,
-    fontWeight: 'bold',
-    backgroundColor: 'rgba(247,247,247,1.0)',
   },
   item: {
     padding: 10,

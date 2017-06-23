@@ -44,6 +44,8 @@
 		80E358C766F147AB98131B66 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45B2D70ADC6A4CE79CAFCC9F /* Octicons.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		91C7948E0AA34892B753D748 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 337908917C534CC68945886F /* Zocial.ttf */; };
+		9607A8291EFCF88F00CD68AD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9607A8281EFCF88F00CD68AD /* logo.png */; };
+		963CFAEB1EFD08EF00B09220 /* mylogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 963CFAEA1EFD08EF00B09220 /* mylogo.png */; };
 		A481E088FA1647E7A96D286B /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A4FFA1C8C9F41EBA4FED63B /* FontAwesome.ttf */; };
 		B9CB19B7CA7248C2AEFC50DD /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E408A484DFF54D9CB1F82523 /* Foundation.ttf */; };
 		DCF973AB0DEE441E98D52564 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 651E92B99F7E46BD88AA22C7 /* MaterialIcons.ttf */; };
@@ -295,6 +297,8 @@
 		7B02494EA09C4830996379A7 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		86EF28B68551403E8470CBB0 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		9607A8281EFCF88F00CD68AD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		963CFAEA1EFD08EF00B09220 /* mylogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mylogo.png; sourceTree = "<group>"; };
 		DDD3EDE0802F43279646A85A /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		DE8C45CABBAB4C719803BD93 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		E408A484DFF54D9CB1F82523 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
@@ -437,6 +441,8 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				9607A8281EFCF88F00CD68AD /* logo.png */,
+				963CFAEA1EFD08EF00B09220 /* mylogo.png */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -942,6 +948,8 @@
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				1C8D95B3232C4D568ABDECC3 /* Entypo.ttf in Resources */,
 				356AD3A0FC604A63801B7A1E /* EvilIcons.ttf in Resources */,
+				963CFAEB1EFD08EF00B09220 /* mylogo.png in Resources */,
+				9607A8291EFCF88F00CD68AD /* logo.png in Resources */,
 				A481E088FA1647E7A96D286B /* FontAwesome.ttf in Resources */,
 				B9CB19B7CA7248C2AEFC50DD /* Foundation.ttf in Resources */,
 				545CE297CCEE4A898D4506DB /* Ionicons.ttf in Resources */,
